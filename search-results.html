@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Búsqueda | ShopStore</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container-nav">
+            <div class="logo">
+                <a href="index.html"><h1>ShopStore</h1></a>
+            </div>
+            
+            <form action="search-results.html" method="GET" class="search-bar">
+                <input type="text" name="q" placeholder="Buscar productos..." required>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title" id="search-title">Resultados de búsqueda</h2>
+
+        <section class="sections-products" id="search-results-container">
+            <p class="loading">Buscando productos...</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3>ShopStore</h3>
+                <p>Tu tienda de confianza.</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 ShopStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/search-results.js"></script>
+</body>
+</html>
